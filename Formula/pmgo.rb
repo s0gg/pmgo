@@ -3,7 +3,7 @@ class Pmgo < Formula
   homepage "https://github.com/s0gg/pmgo"
   head "https://github.com/s0gg/pmgo.git", branch: "main"
 
-  depends_on "go" => :buildinfo
+  depends_on "go" => :build
 
   def install
     system "go", "build", *std_go_args, "pmgo.go"
